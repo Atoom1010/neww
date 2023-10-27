@@ -1,0 +1,57 @@
+@import '~@website/common/styles/index.sass'
+.feature11-container
+  display: flex
+  justify-content: space-between
+  max-width: unset !important
+  width: 100% !important
+  padding: 0 !important
+  @media only screen and (max-width: 992px)
+    flex-direction: column
+  .feature-content
+    width: 50%
+    margin: 80px 40px
+    padding: 0 20px
+    box-sizing: border-box
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    justify-content: center
+    position: relative
+    z-index: 1
+    @media only screen and (min-width: 1024px)
+      .content-wrapper
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+    .list
+      display: flex
+      flex-direction: column
+      list-style: none
+      margin: 40px 0 0 15px
+      @media only screen and (max-width: 1440px)
+        margin-left: 0
+      .list-item-wrap
+        display: flex
+        align-items: center
+        .list-item
+          padding: 12px
+  .image-wrap
+    width: 50%
+    .image-figure
+      text-align: center
+      font-size: 0
+      height: 100%
+      .lazy-figure
+        height: initial
+        padding-top: 100%
+        position: relative
+
+@media only screen and (max-width: 992px)
+  .feature11-container
+    .feature-item
+      width: 100%
+    .feature-content
+      max-width: 600px
+      margin: 40px auto
+      text-align: left
+      align-items: center

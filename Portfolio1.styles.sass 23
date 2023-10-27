@@ -1,0 +1,121 @@
+.media-library-root > div
+  z-index: 5
+.slick-list
+  height: 100%
+.slick-slide > div
+  margin: 0
+  height: 100%
+  &:focus
+    outline: none !important
+.slick-track
+  height: 100%
+.slick-slide
+  .port-img-wrap
+    padding-top: 80px
+    margin: auto
+    @media only screen and (max-width: 992px)
+      figure
+        display: flex
+        justify-content: center
+        align-items: center
+    &.img-col
+      padding-top: 270px
+.port-img-wrap
+  height: 75%
+  &:focus
+    outline: none !important
+.main-slider-wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+  justify-content: space-between
+  padding-bottom: 185px
+  box-sizing: border-box
+.preview-mode-container
+  position: fixed
+  top: 0
+  width: 100%
+  height: 100%
+  .img-col img
+    object-fit: cover
+.main-slider-container
+  height: 100%
+  position: relative
+  .left
+    position: absolute
+    top: 50%
+  .right
+    position: absolute
+    right: 0
+    top: 50%
+.rf-close
+  z-index: 2
+  position: absolute
+  right: 0
+.carousel-slider
+  margin-bottom: 10px
+  position: absolute
+  bottom: 0
+  left: 10px
+  width: 100%
+.custom-slick-slider-container
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 100%
+.custom-slick-slider
+  width: 50%
+  height: 100%
+  margin: 0 auto
+.portfolio-container
+  position: relative
+  min-height: 200px
+  display: flex
+  flex-direction: column
+  align-items: center
+  .portfolio-wrap
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    & > div
+      outline: none !important
+      &:focus
+        outline: none !important
+    .portfolio-col
+      width: 33%
+      font-size: 0
+      margin: 0 10px
+      .port-img-wrap
+        height: 100%
+        margin: 20px
+        &:last-child
+          margin: 20px 20px 0 20px
+        img
+          width: 100%
+
+.main-slider-wrapper .slick-list
+  *
+    &:focus
+      outline: none !important
+
+.wm-lightbox-figure
+  height: 100%
+
+@media only screen and (max-width: 768px)
+  .portfolio-container
+    .portfolio-wrap
+      flex-direction: column
+      .portfolio-col
+        width: 100%
+        margin: 0
+.lightbox-selected-image
+  max-height: 100% !important
+  max-width: 100% !important
+@media only screen and (max-width: 992px)
+  .custom-slick-slider
+    width: 70%
+@media only screen and (max-width: 992px)
+  .main-slider-wrapper
+    padding-bottom: 120px

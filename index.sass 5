@@ -1,0 +1,5 @@
+@import '~@website/common/styles/index.sass'
+.link-wrapper
+  display: flex
+  align-items: center
+  position: relative

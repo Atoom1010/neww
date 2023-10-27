@@ -1,0 +1,18 @@
+@import '~@website/common/styles/index.sass'
+
+.submit-button
+    background-color: rgb(251,252,255)
+    border-top: 1px solid #eae4e4
+    text-align: center
+    padding: 10px
+    cursor: pointer
+    color: $secondarySemiDark
+.selected
+    background-color: $primaryDark
+    color: $white
+.helper-text
+    color: $secondarySemiDark
+    font-size: 14px
+    padding: 1rem 0 0 0
+    margin: 0 auto
+    max-width: 80%

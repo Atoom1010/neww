@@ -1,0 +1,170 @@
+// new colors
+$primaryAnonym: #6d9fff
+$white: #ffffff
+// primary
+$primaryExtraLight: #f5fafe
+$primaryLight: #eef5ff
+$primarySemiLight: #cfe0ff
+$primary: #b9cfff
+$primarySemiDark: #5690ff
+$primaryDark: #387dff
+$primaryExtraDark: #0052e0
+// secondary
+$secondaryUltraLight: #edeff6
+$secondaryExtraLight: #dee3f0
+$secondaryLight: #c1c9e0
+$secondarySemiLight: #9aa6c8
+$secondary: #7683a8
+$secondarySemiDark: #545f7e
+$secondaryDark: #363f5a
+$secondaryExtraDark: #252e48
+
+// accents
+$accentGreen: #4fdc6f
+$accentPurple: #766de8
+$accentYellow: #F7CF06
+$accentRed: #FF4C4C
+
+// buttons
+@mixin btnLightNormal
+  background: linear-gradient(0deg, $primaryExtraLight 6%, $white 100%) no-repeat
+  border: 1px solid $primaryLight
+  box-shadow: 0 3px 9px 0 rgba(0, 82, 224, 0.1)
+
+
+@mixin btnLightHover
+  background-image: linear-gradient(0deg, $white 8%, $white 100%)
+  border: 1px solid $primaryLight
+
+
+@mixin btnLightPressed
+  background-image: linear-gradient(0deg, #e9f5ff 6%, #ffffff 100%)
+  border: 1px solid $primaryLight
+
+
+@mixin btnPurpleNormal
+  background: linear-gradient(-179deg, #9c95ff 4%, #766de8 95%) no-repeat
+  box-shadow: 0 3px 9px 0 rgba(118, 109, 232, 0.5)
+
+
+@mixin btnPurpleHover
+  background-image: linear-gradient(-179deg, #b5afff 7%, #9b94fc 94%)
+  box-shadow: 0 3px 9px 0 rgba(118, 109, 232, 0.5)
+
+
+@mixin btnPurplePressed
+  background-image: linear-gradient(-179deg, #8c83f7 4%, #655be2 93%)
+
+
+@mixin btnBlueNormal
+  background: linear-gradient( -179deg, $primarySemiDark 0%, $primaryDark 97% ) no-repeat
+  box-shadow: 0 3px 9px 0 rgba(56, 125, 255, 0.5)
+
+
+@mixin btnBlueHover
+  background-image: linear-gradient(-179deg, #6ea0ff 5%, #518dff 97%)
+  box-shadow: 0 3px 9px 0 rgba(56, 125, 255, 0.5)
+
+
+@mixin btnBluePressed
+  background-image: linear-gradient(-179deg, #4d88f9 0%, #206cfd 96%)
+
+
+@mixin btnGreenNormal
+  background: linear-gradient(-180deg, #58f17b 4%, #16cd6f 93%) no-repeat
+  box-shadow: 0 3px 9px 0 rgba(43, 189, 133, 0.5)
+
+
+@mixin btnGreenHover
+  background-image: linear-gradient(-180deg, #67fc89 6%, #31de84 92%)
+  box-shadow: 0 3px 9px 0 rgba(43, 189, 133, 0.5)
+
+
+@mixin btnGreenPressed
+  background-image: linear-gradient(-180deg, #41f169 4%, #05c562 92%)
+
+@mixin btnDangerNormal
+  background: linear-gradient(0, #FF4141 0%, #FF706B 100%)
+  box-shadow: 0px 3px 9px 0px rgba(255,76,76,0.5)
+
+@mixin btnDangerHover
+  background: linear-gradient(0, #FF5A5A 0%, #FF8170 100%)
+  box-shadow: 0px 3px 9px 0px rgba(255,76,76,0.5)
+
+@mixin btnDangerPressed
+  background: linear-gradient(0, #FF2B2B 0%, #FF5F59 100%)
+
+@mixin btnLight
+  cursor: pointer
+  text-transform: uppercase
+  text-decoration: none
+  color: $secondaryExtraDark
+  @include btnLightNormal
+  &:hover
+    @include btnLightHover
+
+  &:active
+    @include btnLightPressed
+
+@mixin btnDanger
+  cursor: pointer
+  text-transform: uppercase
+  text-decoration: none
+  color: $white
+  @include btnDangerNormal
+  &:hover
+    @include btnDangerHover
+  &:active
+    @include btnDangerPressed
+
+@mixin btnPurple
+  cursor: pointer
+  text-transform: uppercase
+  text-decoration: none
+  @include btnPurpleNormal
+  &:hover
+    @include btnPurpleHover
+
+  &:active
+    @include btnPurplePressed
+
+
+
+@mixin btnBlue
+  cursor: pointer
+  text-transform: uppercase
+  text-decoration: none
+  @include btnBlueNormal
+  &:hover
+    @include btnBlueHover
+
+  &:active
+    @include btnBluePressed
+
+
+
+@mixin btnGreen
+  cursor: pointer
+  text-transform: uppercase
+  text-decoration: none
+  @include btnGreenNormal
+  &:hover
+    @include btnGreenHover
+
+  &:active
+    @include btnGreenPressed
+
+
+.wm-disabled
+  background-image: linear-gradient(to bottom, #d8dbe7, #d2d5e1, #ccd0dc, #c6cad6, #c0c5d1) !important
+  box-shadow: none !important
+  color: $secondary !important
+
+/* Reset css */
+h1, h2, h3, h4, h5, h6, p, address, ul, li, figure, body
+  margin: 0
+  padding: 0
+
+/* Remove white line between sections */
+section, footer
+  margin: -1px 0 0 0

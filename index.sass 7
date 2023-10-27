@@ -1,0 +1,41 @@
+.sm-cropper-container
+     position: absolute
+     z-index: 52
+     background: rgba(52,52,52,0.9)
+     width: 100%
+     top: 0
+     left: 0
+     width: 100%
+     min-height: calc(100% - 30px)
+     overflow-y: auto
+     padding-bottom: 30px
+     @media only screen and (max-width: 768px)
+          min-height: 100%
+          padding-bottom: 0
+     .sm-cropper-wrapper
+          width: 60vw
+          margin: 0 auto
+          @media only screen and (max-width: 768px)
+               width: 100vw
+     .img-cropper-wrapper, .cropper-confirmation-bar
+          margin: 0
+     .cropper-confirmation-bar
+          background: white
+          padding: 0 20px 20px
+          box-sizing: border-box
+          border-bottom-left-radius: 8px
+          border-bottom-right-radius: 8px
+          @media only screen and (max-width: 768px)
+               padding: 0 0 20px 0
+          .cropper-confirm-buttons
+               button:first-child
+                    @media only screen and (min-width: 768px)
+                         margin-right: 10px
+     .img-cropper-wrapper
+          box-shadow: initial
+          border-bottom-left-radius: initial
+          border-bottom-right-radius: initial
+     .cropper-canvas
+          opacity: 0.5
+     input
+          border: none

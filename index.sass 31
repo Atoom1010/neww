@@ -1,0 +1,7 @@
+@import '~@website/common/styles/index.sass'
+
+.signOutPopup
+     .rf-modal-close-button
+          display: none
+     .user-name
+          font-weight: 600

@@ -1,0 +1,54 @@
+.header-6-container
+  .badge-container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 310px
+    .control-container
+      margin: 10px
+      @media only screen and (max-width: 1200px)
+        margin: 0
+    @media only screen and (max-width: 1200px)
+      width: 100%
+      max-width: initial
+      justify-content: center
+      margin: 0
+      flex-wrap: wrap
+      margin-top: 10px
+      a 
+        margin: 10px
+
+.header-6-container
+  display: flex
+  justify-content: space-around
+  @media only screen and (max-width: 1300px)
+    flex-direction: column
+    text-align: center
+    align-items: center
+    .landing-content
+      display: flex
+      flex-direction: column
+      align-items: center
+
+.mockups-wrap
+  display: flex
+  align-items: flex-end
+  transform: translateY(20px)
+  &:only-child
+    margin-top: 0
+  @media only screen and (max-width: 1300px)
+    margin: 50px 0 0 0
+  @media only screen and (max-width: 500px)
+    transform: translateY(60px) scale(0.8)
+    margin: -40px 0 0 0
+  @media only screen and (max-width: 370px)
+    transform: translateY(80px) scale(0.68)
+    margin: -80px 0 0 0
+  .android-wrap
+    transform: translate(-18px, 60px)
+    border-radius: 40px
+
+.phone-mockup
+  background-size: cover
+  background-position: center
+

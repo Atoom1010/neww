@@ -1,0 +1,38 @@
+.feature-with-code-container
+  position: relative
+  min-height: 200px
+  display: flex
+  flex-direction: column
+  align-items: center
+  .header-content
+    width: 100%
+    max-width: 600px
+    margin: 0 auto 60px auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .btns-wrap
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+  .webpage-wrap
+    width: 100%
+    max-width: 1000px
+    margin: 0 auto
+    overflow: hidden
+    .browser-bar
+      display: block
+      max-width: initial
+    .page-img
+      width: 100%
+      height: auto
+    .code-area
+      background-color: #fff
+      width: 100%
+      height: 260px
+      overflow-y: auto
+      padding: 16px
+      box-sizing: border-box
+      display: block

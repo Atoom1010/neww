@@ -1,0 +1,207 @@
+@import '~@website/common/styles/index.sass'
+
+.shareLink-popup
+     .rf-modal-close-button
+          display: none
+     .rf-modal-wrap
+          min-width: 754px
+          padding: 20px
+.content-container
+     min-height: 320px
+     position: relative
+     .close-icon
+          position: absolute
+          right: 0
+          cursor: pointer
+     .loader-img
+          width: 24px
+          height: 24px
+          transform: translateY(-50%)
+          animation: spinner 850ms linear infinite
+          position: absolute
+          right: 10px
+          top: 20px
+
+     .date-label
+          color: #7683A7
+          padding: 7px
+          font-size: 14px
+     .time-item-container
+          width: 220px
+          .input-container
+               .react-datepicker-popper
+                    width: 100%
+                    top: 38px !important
+                    left: -1px !important
+                    transform: none !important
+                    margin-top: 0 !important
+                    .react-datepicker--time-only
+                         width: 100%
+                         border-top: none
+                         border-radius: 10px
+                         border: 1px solid $secondaryExtraLight
+                         border-top-left-radius: 0
+                         border-top-right-radius: 0
+
+                         .react-datepicker__time-container
+                              width: 100%
+                              height: 210px
+                    .react-datepicker__triangle
+                         display: none
+                    .react-datepicker__header
+                         display: none
+                    .react-datepicker__time-box
+                         width: 100%
+                         text-align: left
+                    .react-datepicker__time-list-item
+                         display: flex
+                         align-items: center
+                         color: $secondaryDark
+                         font-size: 16px
+                         padding: 5px 20px !important
+                         font-family: 'Montserrat', sans-serif
+                         &:hover
+                              background-color: $primaryLight !important
+                    .react-datepicker__time-list-item--selected
+                         background-color: $primaryDark !important
+                         &:hover
+                              background-color: $primaryDark !important
+
+     .day-item-container
+          width: 290px
+     .link-date-container
+          border-radius: 10px
+          max-width: 500px
+          margin: 25px auto
+          padding: 10px 10px 10px 0
+          background: #f5fafe
+          @media only screen and (max-width: 480px)
+               width: 330px
+          @media only screen and (max-width: 320px)
+               width: 290px
+     .popup-text-container
+          color: $secondaryDark
+          padding-top: 30px
+          padding-left: 42%
+          padding-right: 15px
+          .text-title
+               font-size: 20px
+               font-weight: 600
+               padding-bottom: 15px
+               @media only screen and (max-width: 768px)
+                    text-align: center
+          .text-content
+               padding-bottom: 15px
+               font-size: 14px
+     .react-datepicker__input-container
+          input
+               outline: none
+               border: none
+               font-size: 16px
+               width: 100%
+               padding: 0
+               height: 32px
+               box-sizing: border-box
+               cursor: pointer
+               position: relative
+               background: transparent
+     .dayPicker
+          .DayPicker
+               height: 260px
+               z-index: 2
+               position: absolute
+               top: 30px
+               background: white
+               padding: 5px
+               border-radius: 12px
+               box-shadow: 0px 3px 10px #4A89FF26
+               border: 1px solid #DDE3F0
+               .DayPicker-NavBar
+                    .DayPicker-NavButton
+                         outline: none
+               .DayPicker-Caption
+                    color: $secondaryDark
+               .DayPicker-Week
+                    .DayPicker-Day
+                         outline: none
+                    .DayPicker-Day--today
+                         color: $primaryDark !important
+                         &.DayPicker-Day--selected
+                              color: white !important
+                    .DayPicker-Day--selected
+                         background-color: $primaryDark !important
+               @media only screen and (max-width: 1366px)
+                    top: 0px
+                    height: 290px
+
+.illustration-img
+     position: absolute
+     left: -140px
+     top: -110px
+     z-index: 1
+     @media only screen and (max-width: 768px)
+          width: 320px
+          left: 50%
+          transform: translateX(-50%)
+     @media only screen and (max-width: 480px)
+          width: 279px
+          left: 50%
+          top: -108px
+     @media only screen and (max-width: 380px)
+          width: 160px
+          top: -55px
+
+.shareLink-popup
+     .rf-modal-wrap
+          @media only screen and (max-width: 768px)
+               min-width: 500px !important
+               max-width: 650px !important
+               .popup-text-container
+                    padding: 120px 0 0px 0px
+                    .text-title
+                         width: 100%
+                         margin: 0 auto
+                    .text-content
+                         text-align: center
+                         &.note
+                              margin: 0 auto
+                              width: 100%
+          @media only screen and (max-width: 480px)
+               min-width: 290px !important
+               .popup-text-container
+                    padding: 80px 0 0px 0px
+                    .text-title
+                         width: initial
+                         text-align: center
+                         font-size: 16px
+                         padding-bottom: 8px
+                    .text-content
+                         font-size: 12px
+          @media only screen and (max-width: 380px)
+               padding: 10px
+               .popup-text-container
+                    padding: 55px 0 0px 0px
+               .text-content
+                    padding-bottom: 5px
+
+.content-container
+     @media only screen and (max-width: 768px)
+          .day-item-container
+               width: 260px
+          .time-item-container
+               width: 180px
+     @media only screen and (max-width: 480px)
+          .day-item-container
+               width: 100%
+               margin-bottom: 15px
+          .time-item-container
+               width: 100%
+     @media only screen and (max-width: 380px)
+          .day-item-container
+               margin-bottom: 0px
+          .DayPicker
+               top: -60px !important
+          .react-datepicker__time-container
+               height: 117px !important
+               .react-datepicker__time-list
+                    height: 117px !important

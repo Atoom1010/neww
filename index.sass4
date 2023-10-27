@@ -1,0 +1,5 @@
+@import '~@website/common/styles/index.sass'
+.warning-button
+  @include btnBlue
+.modal-content-text
+  color: $secondary

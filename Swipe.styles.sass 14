@@ -1,0 +1,22 @@
+.slick-slider-container
+    width: 100%
+    margin-bottom: 15px
+.rf-image-slider
+    height: 100%
+.rf-image-slider-dots-container
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 20px
+.dots-wrap
+    position: absolute
+    bottom: 24px
+    z-index: 3
+.slider-arrow-control
+    transform: translateY(-30px)
+@media only screen and (max-width: 768px)
+  .rf-image-slider 
+      z-index: 5
+  //@media only screen and (max-width: 768px)
+  //    width: 100%
+  //    margin: 2rem 0

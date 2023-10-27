@@ -1,0 +1,34 @@
+.feature-12-container
+  .feature-12-heading
+    max-width: 800px
+    margin: 80px auto 50px auto
+  .item-controls-wrapper
+    justify-content: center
+    width: 30%
+    flex-grow: 1
+    box-sizing: border-box
+    position: relative
+    min-height: 340px
+    @media only screen and (max-width: 1024px)
+      width: 100%
+    .item-wrapper
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 360px
+      margin: 0 auto
+      height: auto
+      padding: 60px 50px
+      &:only-child
+        justify-content: center
+      @media only screen and (max-width: 1024px)
+        max-width: 600px
+      .feature-icon-text-element-heading
+        display: flex
+        align-items: center
+        margin-bottom: 2rem
+        font-weight: 800
+  .row-remove
+    color: white
+    padding: 10px

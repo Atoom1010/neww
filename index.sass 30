@@ -1,0 +1,10 @@
+.loader-wrapper
+    display: flex
+    flex-direction: column
+    position: absolute
+    width: 100%
+    height: 100%
+.mobile-content-loader
+    display: none
+    @media only screen and (max-width: 768px)
+        display: block
